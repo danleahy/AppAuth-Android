@@ -16,7 +16,7 @@ android.buildTypes.debug.manifestPlaceholders = [
 ]
 
 dependencies {
-    api "com.android.support:customtabs:${rootProject.supportLibVersion}"
+    api "com.android.support:customtabs:27.0.1"
     apply from: '../config/testdeps.gradle', to:it
 }
 
@@ -85,4 +85,8 @@ install {
             }
         }
     }
+}
+
+android {
+    buildToolsVersion '27.0.3'
 }
